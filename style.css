@@ -164,7 +164,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 25px;
 }
 
@@ -175,6 +175,8 @@ header {
     flex-direction: column;
     flex: 1;
     padding: 0px 10px;
+    gap: 15px;
+    margin-bottom: 15px;
 }
 
 .card img {
@@ -275,5 +277,11 @@ section {
 
     #nav__burger {
         display: none;
+    }
+}
+
+@media screen and (min-width: 1005px){
+    .cards__news__row{
+        flex-direction: row;
     }
 }
