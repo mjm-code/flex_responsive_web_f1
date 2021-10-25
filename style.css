@@ -1,0 +1,279 @@
+/* fonts */
+@font-face {
+    font-family: F1;
+    src: url("./res/fonts/Formula1-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: F1;
+    src: url("./res/fonts/Formula1-Regular.ttf");
+    font-weight: normal;
+}
+
+
+
+/* apply to core elements */
+body, main, header, section, footer {
+    margin: 0;
+    padding: 0px;    
+    color: #ffffff;
+    font-family: 'F1';
+    font-weight: normal;    
+}
+
+/* main container */
+main {
+    background: #ffffff;
+}
+
+/* navbar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #f80202;
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav__burger__menu{
+    display: none;
+    min-width: 300px;
+}
+
+#nav__burger > input {  
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: 9px;
+    left: 3px;   
+    cursor: pointer;
+    opacity: 0; 
+    z-index: 2; 
+}
+
+#nav__burger > span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;   
+    background: #ffffff;
+    border-radius: 3px;
+    z-index: 1;
+    margin-left: 5px;
+}
+
+#nav__burger input:checked ~ ul {
+    display: block;
+}
+
+#nav__burger input:checked ~ span:nth-of-type(2) {
+    display: none;
+}
+
+#nav__burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+}
+
+#nav__burger input:checked ~ span:nth-of-type(3) {
+    transform: rotate(135deg) translate(4px, -3px);
+}
+
+#nav__burger ul {
+    list-style-type: none;
+}
+
+#nav__burger a {
+    text-decoration: none;
+    color: #ffffff;    
+}
+
+#nav__burger__menu li {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom-right-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#nav__logo img {
+    height: 40px;
+    width: 60px;
+} 
+
+#nav__profile i {
+    font-size: large;
+    margin-right: 15px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 5px;
+    padding: 4px 15px;
+}
+
+#nav__menu__large {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav__menu__large a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 50px;
+}
+
+
+/* navbar ends */
+
+/* primary content */
+.primary__content__wrapper {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card__latest {
+    display: flex;
+    flex: 1;
+}
+
+.cards__news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    flex: 1;
+}
+
+.cards__news__row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    padding: 0px 10px;
+}
+
+.card img {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+.card video {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+.hover:hover {
+    transform: scale(1.05);
+}
+
+
+.card__bordered {
+    display: flex;
+    flex-direction: column;
+    border-top: 10px solid red;
+    border-right: 10px solid red;
+    border-top-right-radius: 25px;
+}
+
+ h5 {
+    color: red;
+}
+
+.card__textbox {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid red;
+    border-right: 2px solid red;
+    border-bottom-right-radius: 10px;
+}
+
+.card__title {
+    color: black;
+
+}
+
+.card__bordered a {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 15px;
+}
+
+.card__bordered img {
+    max-width: 90%;
+    height: auto;
+}
+
+.card__bordered img:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #000000;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+/* latest */
+section {
+    margin: 25px;
+    min-height: 200px;
+}
+
+
+
+@media screen and (min-width: 750px) {
+    .primary__content__wrapper {
+        flex-direction: row;
+    }
+
+    #nav__menu__large{
+        display: flex;
+    }
+
+    #nav__burger {
+        display: none;
+    }
+}
