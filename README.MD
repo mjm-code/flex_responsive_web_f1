@@ -1,6 +1,6 @@
 <h1 align="center">
- <img src="res/logo/f1_logo.png" width=40 height=40/>Formula 1 like website<img src="res/logo/f1_logo.png" width=40 height=40/>
- <img src="res/images/snippet.jpg" width=500 height=300/><br>
+ <img src="https://github.com/mjm-code/flex_responsive_web_f1/blob/master/res/logo/f1_logo.png" width=40 height=40/>Formula 1 like website<img src="https://github.com/mjm-code/flex_responsive_web_f1/blob/master/res/logo/f1_logo.png" width=40 height=40/><br>
+ <img src="https://github.com/mjm-code/flex_responsive_web_f1/blob/master/res/images/snippet.JPG" width=500 height=300/><br>
 </h1>
 
 <h5 align="center">Inspired by Formula 1 official website built with Css only. </h5>
