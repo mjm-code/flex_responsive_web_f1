@@ -15,7 +15,13 @@
 - [x] Responsive Web Design.
 - [x] Mobile first Approach.
 - [x] Css only.
-- [x] Having fun :).  
+- [x] Having fun :smirk:.  
+
+***
+
+##### To run locally simply copy the repo and open ``` index.html ```  with your favorite browser.
+
+
 
 ***
 
